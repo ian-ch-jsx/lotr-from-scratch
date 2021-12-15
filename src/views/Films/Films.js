@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { fetchFilms } from '../../services/films';
+import FilmList from '../../components/Films/FilmList';
 
 export default function Films() {
   const [films, setFilms] = useState([]);
@@ -12,5 +13,11 @@ export default function Films() {
     fetchData();
   }, []);
 
-  return <h2>films!</h2>;
+  return (
+    <div>
+      {films.map((film) => {
+        return <FilmList key={film.id} {...film} />;
+      })}
+    </div>
+  );
 }
