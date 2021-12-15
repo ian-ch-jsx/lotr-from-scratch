@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import CharacterList from '../../components/Characters/CharacterList';
 import { fetchCharacters } from '../../services/characters';
