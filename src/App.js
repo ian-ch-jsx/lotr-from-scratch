@@ -8,12 +8,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <header>
-          <NavLink to="/">Main</NavLink>
+        <div className="header">
+          <NavLink to="/">Home</NavLink>
           <NavLink to="/films">Films</NavLink>
           <NavLink to="/characters">Characters</NavLink>
           <NavLink to="/books">Books</NavLink>
-        </header>
+        </div>
         <Switch>
           <Route path="/films">
             <Films />

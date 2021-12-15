@@ -1,12 +1,13 @@
-h1 {
-  color: red;
-}
-
 .film-cards {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  background-color: pink;
+  width: 300px;
+  height: 200px;
+  background-color: #cdd1b9;
+  color: #823038;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
 }
 
 .films-container {
@@ -14,4 +15,11 @@ h1 {
   flex-direction: row;
   margin: auto;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.film-cards h1 {
+  color: #823038;
+  text-align: center;
+  font-size: 1.7rem;
 }
