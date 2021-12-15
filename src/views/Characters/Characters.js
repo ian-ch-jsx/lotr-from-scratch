@@ -47,12 +47,10 @@ export default function Characters() {
         <button onClick={() => setLoading(true)}>search</button>
       </div>
       <div>
-        {characters.map((character) => {
-          return <CharacterList key={character.id} {...character} />;
-        })}
+        {characters.map((character) => (
+          <CharacterList key={character.id} {...character} />
+        ))}
       </div>
     </>
   );
-}
-
 }
