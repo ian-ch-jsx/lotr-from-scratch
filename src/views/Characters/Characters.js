@@ -5,9 +5,7 @@ import { fetchCharacters } from '../../services/characters';
 export default function Characters() {
   const [characters, setCharacters] = useState([]);
   const [race, setRace] = useState('All');
-  const [query, setQuery] = useState('');
 
-  setQuery('');
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchCharacters(race, query);
