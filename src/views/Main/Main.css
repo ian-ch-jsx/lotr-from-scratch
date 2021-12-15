@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 800px;
+  text-align: justify;
+}
+
+p {
+  font-style: italic;
+  margin: 0;
+}

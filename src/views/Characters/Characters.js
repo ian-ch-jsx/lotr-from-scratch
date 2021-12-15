@@ -28,13 +28,7 @@ export default function Characters() {
   }, [race, query, loading]);
   return (
     <>
-      <div>
-        <input
-          type="text"
-          placeholder="search by name"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        ></input>
+      <div className="search">
         <select value={race} onChange={(e) => setRace(e.target.value)}>
           <option value="All">All</option>
           <option value="Dwarf">Dwarf</option>
@@ -44,6 +38,12 @@ export default function Characters() {
           <option value="Maiar">Maiar</option>
           <option value="Orc">Orc</option>
         </select>
+        <input
+          type="text"
+          placeholder="search by name"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        ></input>
         <button onClick={() => setLoading(true)}>search</button>
       </div>
       <div>

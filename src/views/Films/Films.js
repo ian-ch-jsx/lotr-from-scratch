@@ -14,7 +14,7 @@ export default function Films() {
   }, []);
 
   return (
-    <div>
+    <div className="films-container">
       {films.map((film) => {
         return <FilmList key={film.id} {...film} />;
       })}
